@@ -47,7 +47,7 @@ export default function Home() {
             className="flex animate-in gap-3 text-sm"
             style={{ "--index": 2 } as React.CSSProperties}
           >
-            <Link
+            {/* <Link
               className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
               href="/links"
             >
@@ -60,9 +60,9 @@ export default function Home() {
           >
             Discord
             <ArrowUpRightIcon className="h-4 w-4 text-tertiary" />
-          </Link>
+          </Link> */}
             <Link
-              href="https://www.instagram.com/krasnokutskii.vadim/"
+              href="https://www.instagram.com/deniyudii/"
               className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
             >
               IG
@@ -70,7 +70,7 @@ export default function Home() {
             </Link>
             <Link
               className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
-              href="https://t.me/krasnokutskiii"
+              href="https://t.me/deniyudi"
             >
               Telegram
               <ArrowUpRightIcon className="h-4 w-4 text-tertiary" />
