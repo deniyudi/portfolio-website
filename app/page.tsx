@@ -3,7 +3,6 @@ import { allBlogs, allProjects } from ".contentlayer/generated";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 import Link from "@/components/ui/Link";
-import BentoGrid from "@/app/components/bento/BentoGrid";
 import Me from "@/public/avatar.png";
 import Avatar from "@/app/components/ui/Avatar";
 import PostProject from "./blog/components/PostProject";
