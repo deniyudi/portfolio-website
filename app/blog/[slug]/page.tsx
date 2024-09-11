@@ -7,12 +7,9 @@ import { allBlogs } from ".contentlayer/generated";
 import Tags from "@/components/Tags";
 import Mdx from "@/app/blog/components/MdxWrapper";
 import Avatar from "@/app/components/ui/Avatar";
-import FlipNumber from "@/components/FlipNumber";
 import Me from "@/public/avatar.png";
 
 import { formatDate } from "@/app/_utils/formatDate";
-import { getViewsCount } from "@/app/db/queries";
-import { incrementViews } from "@/app/db/actions";
 
 
 type Props = {
@@ -97,8 +94,6 @@ export default async function Post({ params }: { params: any }) {
                   ? `(Updated ${formatDate(blog.updatedAt)})`
                   : ""}
                 {" · "}
-
-                <Views slug={blog.slug} />
               </p>
             </div>
           </div>
@@ -143,19 +138,5 @@ export default async function Post({ params }: { params: any }) {
         <Link href="/blog">← All Blogs</Link>
       </div>
     </div>
-  );
-}
-
-async function Views({ slug }: { slug: string }) {
-  let blogViews = await getViewsCount();
-  const viewsForBlog = blogViews.find((view) => view.slug === slug);
-
-  incrementViews(slug);
-
-  return (
-    <span>
-      <FlipNumber>{viewsForBlog?.count || 0}</FlipNumber>
-      {viewsForBlog?.count === 1 ? " view" : " views"}
-    </span>
   );
 }
