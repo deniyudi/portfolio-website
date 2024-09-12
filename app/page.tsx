@@ -1,12 +1,19 @@
 import Image from "next/image";
 import { allBlogs, allProjects } from ".contentlayer/generated";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import { lazy } from "react";
 
 import Link from "@/components/ui/Link";
 import Me from "@/public/avatar.png";
 import Avatar from "@/app/components/ui/Avatar";
 import PostProject from "./blog/components/PostProject";
 import PostBlog from "@/app/blog/components/PostBlog";
+import TypeAnimation from "@/components/elements/TypeAnimation";
+import SectionHeading from "@/components/elements/SectionHeading";
+import SectionSubHeading from "@/components/elements/SectionSubHeading";
+import { HiCode } from "react-icons/hi";
+
+const SkillList = lazy(() => import("./components/skill/SkillList"));
 
 export default function Home() {
   const blogs = allBlogs
@@ -32,35 +39,35 @@ export default function Home() {
             className="animate-in space-y-4"
             style={{ "--index": 2 } as React.CSSProperties}
           >
-            <h1 className="animate-in text-3xl font-semibold tracking-tight text-primary">
-              hey, Deni here!
+            <h1 className="animate-in text-3xl font-semibold tracking-tight text-primary ">
+             
+            <TypeAnimation
+                sequence={[
+              "Hi, Deni is here !",
+              "Hi, I'm Software Engineer",
+              "Hi, I'm Full Stack Developer",
+            ]}
+            delay={3000}
+          />
             </h1>
             <p
-            className="max-w-lg animate-in text-secondary"
+            className=" animate-in text-secondary text-justify"
             style={{ "--index": 1 } as React.CSSProperties}
             >
-              I am a QA Engineer who test for the web, mobile with a oriented approach. 
-              In addition to testing I also enjoy automation-testing, where I focus on personal development.
+              Passionate and experienced Software Engineer with a strong focus on fullstack development. Proficient in Laravel and well-versed in a wide range of web technologies. I thrive in collaborative team environments, committed to delivering efficient, scalable, and visually appealing web applications. Currently, I work as a Software Development staff member and am actively expanding my skills in Laravel, with a strong desire to grow and contribute meaningfully to every project I undertake. I am looking for an opportunity to thrive on what I&apos;ve learned.
             </p>
           </div>
           <div
             className="flex animate-in gap-3 text-sm"
             style={{ "--index": 2 } as React.CSSProperties}
           >
-            {/* <Link
+            <Link
               className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
               href="/links"
             >
               Links
               <ArrowUpRightIcon className="h-4 w-4 text-tertiary" />
             </Link>
-            <Link
-            href="https://discord.gg/EdY5fMzu"
-            className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
-          >
-            Discord
-            <ArrowUpRightIcon className="h-4 w-4 text-tertiary" />
-          </Link> */}
             <Link
               href="https://www.instagram.com/deniyudii/"
               className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
@@ -78,6 +85,19 @@ export default function Home() {
           </div>
         </div>
   
+        <div
+          className="flex animate-in flex-col gap-3"
+          style={{ "--index": 4 } as React.CSSProperties}
+        >
+          <div className="space-y-2">
+            <SectionHeading title="Skills" icon={<HiCode className="mr-1" />} />
+            <SectionSubHeading>
+              <p className="dark:text-neutral-400">My coding skills</p>
+            </SectionSubHeading>
+          </div>
+          <SkillList />
+        </div>
+
         <div
           className="flex animate-in flex-col gap-8"
           style={{ "--index": 4 } as React.CSSProperties}
@@ -97,6 +117,7 @@ export default function Home() {
           </div>
           <PostProject posts={projects} />
         </div>
+        
         <div
           className="flex animate-in flex-col gap-8"
           style={{ "--index": 4 } as React.CSSProperties}

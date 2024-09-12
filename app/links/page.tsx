@@ -26,7 +26,7 @@ export default function Links() {
             <p className="max-w-sm text-secondary mx-auto text-center">            
             QA engineer who loves to create cool things. 
             By clicking on any block, you can get to know me better. 
-            Find me elsewhere @krasnokutskiii
+            Find me elsewhere @deniyudi
             </p>
           </div>
         </div>
