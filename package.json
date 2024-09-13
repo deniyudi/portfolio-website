@@ -18,6 +18,7 @@
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@types/linkify-it": "^3.0.5",
     "@types/mapbox-gl": "^3.1.0",
@@ -48,6 +49,7 @@
     "rehype-slug": "^6.0.0",
     "slugify": "^1.6.6",
     "swr": "^2.2.4",
+    "tailwind-merge": "^2.5.2",
     "tlds": "^1.252.0",
     "vaul": "^0.9.0"
   },

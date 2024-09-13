@@ -4,12 +4,13 @@ import Link from "next/link";
 import clsx from "clsx";
 import { allProjects, Project } from ".contentlayer/generated";
 import Halo from "@/components/ui/Halo";
+import { SiJavascript } from "react-icons/si";
+import Tags from "@/components/Tags";
 
 export const metadata: Metadata = {
   title: "Projects | Deni Yudi Saputra",
   description: "Here are some of the projects I've worked on.",
 };
-
 
 export default function Blog() {
   const projects = allProjects;
@@ -64,10 +65,10 @@ export default function Blog() {
                   </Link>
                   <time className="text-secondary"> · {project.time}</time>
                 </div>
-
-                <p className="line-clamp-3 text-tertiary">
-                  {project.summary}
-                </p>
+                <p className="line-clamp-3 text-tertiary">{project.summary}</p>
+                <div className="flex flex-col gap-6">
+                  <Tags tags={project.tags} />
+                </div>
               </div>
             </li>
           ))}
