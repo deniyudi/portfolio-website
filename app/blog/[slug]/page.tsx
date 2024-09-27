@@ -11,7 +11,6 @@ import Me from "@/public/avatar.png";
 
 import { formatDate } from "@/app/_utils/formatDate";
 
-
 type Props = {
   params: {
     slug: string;
@@ -38,25 +37,24 @@ export async function generateMetadata(
     slug,
   } = blog;
 
-  const ogImage = `https://https://krasnokutskiy.vercel.app/${image}`;
+  const ogImage = `https://https://deniyudi.vercel.app/${image}`;
 
   const metadata: Metadata = {
-    title: `${title} | Krasnokutskiy`,
+    title: `${title} | Deni Yudi Saputra`,
     description,
     openGraph: {
-      title: `${title} | Krasnokutskiy`,
+      title: `${title} | Deni Yudi Saputra`,
       description,
       type: "article",
       publishedTime,
-      url: `https://krasnokutskiy.vercel.app/blog/${slug}`,
+      url: `https://deniyudi.vercel.app/blog/${slug}`,
       images: [
         {
-          url: `https://krasnokutskiy.vercel.app/api/og?title=${title}`,
+          url: `https://deniyudi.vercel.app/api/og?title=${title}`,
           alt: title,
         },
         { url: ogImage, alt: title },
       ],
-      
     },
   };
 
@@ -66,7 +64,6 @@ export async function generateMetadata(
 export default async function Post({ params }: { params: any }) {
   const blog = allBlogs.find((blog) => blog.slug === params.slug);
 
-
   if (!blog) {
     notFound();
   }
@@ -74,7 +71,7 @@ export default async function Post({ params }: { params: any }) {
   return (
     <div className="flex flex-col gap-20">
       <article>
-          <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8">
           <div className="flex max-w-xl flex-col gap-4">
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-primary">
               {blog.title}
@@ -83,9 +80,9 @@ export default async function Post({ params }: { params: any }) {
           </div>
 
           <div className="flex max-w-none items-center gap-4">
-          <Avatar src={Me} initials="br" size="sm" />
+            <Avatar src={Me} initials="br" size="sm" />
             <div className="leading-tight">
-              <p className="text-primary">Vadim Krasnokutskiy</p>
+              <p className="text-primary">Deni Yudi Saputra</p>
               <p className="text-secondary">
                 <time dateTime={blog.publishedAt}>
                   {formatDate(blog.publishedAt)}

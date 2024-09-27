@@ -11,8 +11,8 @@ export const metadata: Metadata = {
       description:
         "I write about programming, design, and occasionally life updates!",
       type: "website",
-      url: "https://krasnokutskiy.vercel.app/blog/Blog",
-      images: [{ url: "https://krasnokutskiy.vercel.app/api/og?title=Blog", alt: "Blog" }],
+      url: "https://deniyudi.vercel.app/blog/Blog",
+      images: [{ url: "https://deniyudi.vercel.app/api/og?title=Blog", alt: "Blog" }],
     },
 };
 

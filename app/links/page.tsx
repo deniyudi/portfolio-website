@@ -7,7 +7,7 @@ export default function Links() {
   return (
     <>
       <div className="flex flex-col gap-16 md:gap-24">
-      <div className="flex animate-in flex-col gap-8">
+        <div className="flex animate-in flex-col gap-8">
           <Image
             src={avatar}
             width={100}
@@ -23,10 +23,10 @@ export default function Links() {
             <h1 className="text-3xl font-bold tracking-tight">
               Deni Yudi Saputra
             </h1>
-            <p className="max-w-sm text-secondary mx-auto text-center">            
-            QA engineer who loves to create cool things. 
-            By clicking on any block, you can get to know me better. 
-            Find me elsewhere @deniyudi
+            <p className="mx-auto max-w-sm text-center text-secondary">
+              Software Engineer who loves to create cool things. By clicking on
+              any block, you can get to know me better. Find me elsewhere
+              @deniyudi
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Links() {
           style={{ "--index": 3 } as React.CSSProperties}
         >
           {ConnectLinks.map((link) => (
-           <li className="col-span-1 transition-opacity" key={link.label}>
+            <li className="col-span-1 transition-opacity" key={link.label}>
               <Link
                 href={link.href}
                 className="inline-grid w-full rounded-lg bg-tertiary p-4 no-underline transition-opacity"

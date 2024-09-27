@@ -12,7 +12,6 @@ import TypeAnimation from "@/components/elements/TypeAnimation";
 import SectionHeading from "@/components/elements/SectionHeading";
 import SectionSubHeading from "@/components/elements/SectionSubHeading";
 import { HiCode } from "react-icons/hi";
-import Footer from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
 
 const SkillList = lazy(() => import("./components/skill/SkillList"));

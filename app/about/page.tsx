@@ -19,21 +19,21 @@ import deni2 from "public/gallery/deni2.jpg";
 export const metadata: Metadata = {
   title: "About | Deni Yudi Saputra",
   description:
-    "I am a QA engineer who basically just enjoys creating things.",
+    "I am a Full-Stack Developer who basically just enjoys creating things.",
 };
 
 export default function About() {
   return (
     <div className="flex flex-col gap-16 md:gap-24">
-       <div>
+      <div>
         <h1 className="animate-in text-3xl font-bold tracking-tight text-primary">
-        About
+          About
         </h1>
         <p
           className="animate-in text-secondary"
           style={{ "--index": 1 } as React.CSSProperties}
         >
-           A glimpse into me.
+          A glimpse into me.
         </p>
       </div>
       <div className="mb-8 md:hidden">
@@ -74,24 +74,25 @@ export default function About() {
       >
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
-            
             <p>
-            Hi, i&apos;m Deni Yudi Saputra, my experience in testing as a QA Engineer 1 years. Besides testing, 
-              I also love to develop myself and always learn something new. 
-              I focus on technical equipment, creative work and a bit of personal development.
+              Hi, i&apos;m Deni Yudi Saputra, a Software Engineer passionate
+              about learning new skills, focusing on technical development,
+              creativity, and personal growth. I thrive on continuously
+              developing myself, embracing new challenges, and exploring
+              innovative solutions in both technical and creative fields.
             </p>
             <p>
-            You can chat with me at{" "}
+              You can chat with me at{" "}
               <Link
                 className="underline"
                 href="https://www.instagram.com/deniyudii/"
               >
                 Instagram.
               </Link>{" "}
-            
             </p>
             <p>
-              When I&apos;m not at work, I&apos;m most likely working on development or improving this site :)
+              When I&apos;m not at work, I&apos;m most likely working on
+              development or improving this site :)
             </p>
           </div>
         </Section>
@@ -99,14 +100,16 @@ export default function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-            I started my career with courses at the United Tractors School Programming, and then I joined the company Qualita Indonesia. Where I still work today.
+              I started my career with courses at the United Tractors School
+              Programming, and then I joined the company Qualita Indonesia.
+              Where I still work today.
             </p>
             <Workplaces items={workplaces} />
           </div>
         </Section>
 
         <Section heading="Connect" headingAlignment="left">
-        <ul className="animated-list grid flex-grow grid-cols-1 gap-3 md:grid-cols-2">
+          <ul className="animated-list grid flex-grow grid-cols-1 gap-3 md:grid-cols-2">
             {ConnectLinks.map((link) => (
               <li className="col-span-1 transition-opacity" key={link.label}>
                 <Link
@@ -134,8 +137,6 @@ export default function About() {
             ))}
           </ul>
         </Section>
-
-        
       </div>
     </div>
   );
