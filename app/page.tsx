@@ -86,7 +86,7 @@ export default function Home() {
           </Link>
           <Link
             className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
-            href="/public/resume/CV Deni Yudi Saputra.pdf"
+            href="/resume/CV Deni Yudi Saputra.pdf"
           >
             Resume
             <ArrowUpRightIcon className="h-4 w-4 text-tertiary" />

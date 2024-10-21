@@ -59,7 +59,7 @@ const ConnectLinks: ConnectLink[] = [
   },
   {
     label: "Resume",
-    href: "/public/resume/CV Deni Yudi Saputra.pdf",
+    href: "/resume/CV Deni Yudi Saputra.pdf",
     icon: <FaFileAlt />,
   },
 ];
