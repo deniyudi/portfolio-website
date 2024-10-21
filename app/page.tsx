@@ -86,9 +86,9 @@ export default function Home() {
           </Link>
           <Link
             className="flex w-fit items-center rounded-full bg-secondary px-3 py-1 no-underline hover:bg-tertiary"
-            href="https://t.me/deniyudi"
+            href="/public/resume/CV Deni Yudi Saputra.pdf"
           >
-            Telegram
+            Resume
             <ArrowUpRightIcon className="h-4 w-4 text-tertiary" />
           </Link>
         </div>

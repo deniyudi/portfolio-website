@@ -6,7 +6,7 @@ export default function Gumroad() {
   return (
   
       <Link
-        href="https://t.me/krasnokutskiii"
+        href="https://t.me/deniyudi"
         className="col-span-1 row-span-1 no-underline hidden md:block"
       >
         <Card className="flex aspect-square flex-col gap-1.5 p-4 md:p-6">
@@ -18,7 +18,7 @@ export default function Gumroad() {
 
           <Link
           className="mt-auto flex w-fit items-center gap-1.5 rounded-full bg-secondary px-4 py-1.5 text-sm no-underline hover:bg-tertiary"
-          href="https://t.me/krasnokutskiii"
+          href="https://t.me/deniyudi"
         >
           <span className="font-medium text-primary">Follow</span>
           

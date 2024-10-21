@@ -12,7 +12,7 @@ export default function Instagram() {
         <p className="line-clamp-2">Repository and all</p>
         <Link
           className="mt-auto flex w-fit items-center gap-1.5 rounded-full bg-tertiary px-4 py-1.5 text-sm no-underline"
-          href="https://github.com/qakrasnokutskyi"
+          href="https://github.com/deniyudi"
         >
           <span className="font-medium text-primary">Follow</span>
           <span className="text-tertiary">15</span>

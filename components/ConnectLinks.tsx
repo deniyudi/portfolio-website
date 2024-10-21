@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaDiscord,
   FaWhatsapp,
+  FaFileAlt,
 } from "react-icons/fa";
 
 interface ConnectLink {
@@ -47,9 +48,19 @@ const ConnectLinks: ConnectLink[] = [
     icon: <FaInstagram />,
   },
   {
+    label: "Telegram",
+    href: "https://t.me/deniyudi/",
+    icon: <FaTelegram />,
+  },
+  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/deniyudisaputra/",
     icon: <FaLinkedin />,
+  },
+  {
+    label: "Resume",
+    href: "/public/resume/CV Deni Yudi Saputra.pdf",
+    icon: <FaFileAlt />,
   },
 ];
 

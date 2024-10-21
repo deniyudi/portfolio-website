@@ -25,19 +25,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-        <body className="width-full bg-primary text-primary antialiased">
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Navigation />
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="width-full bg-primary text-primary antialiased">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navigation />
 
-            <div className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
-              {children}
-            </div>
-          </ThemeProvider>
-          <Analytics />
-        </body>
-      </html>
-    </ClerkProvider>
+          <div className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
+            {children}
+          </div>
+        </ThemeProvider>
+        <Analytics />
+      </body>
+    </html>
   );
 }

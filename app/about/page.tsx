@@ -97,7 +97,7 @@ export default function About() {
           </div>
         </Section>
 
-        <Section heading="Work" headingAlignment="left">
+        <Section heading="Work Experience" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
               I started my career with courses at the United Tractors School
